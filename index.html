@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and privacy information for MoneyHoney for YNAB.">
+  <title>MoneyHoney for YNAB - Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f5f7f6;
+      --surface: #ffffff;
+      --text: #17211d;
+      --muted: #52615a;
+      --line: #d8e0dc;
+      --brand: #176b4d;
+      --brand-strong: #0f5039;
+      --accent: #bf5b34;
+      --notice: #fff5e7;
+      --notice-line: #e5b980;
+      --shadow: 0 12px 36px rgba(23, 33, 29, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a { color: var(--brand-strong); }
+    a:hover { color: var(--accent); }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .header-inner,
+    main,
+    .footer-inner {
+      width: min(920px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: var(--brand);
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 3px 10px rgba(23, 33, 29, 0.14);
+    }
+
+    nav { display: flex; gap: 20px; }
+    nav a { font-size: 15px; font-weight: 650; text-decoration: none; }
+
+    main { padding: 64px 0 72px; }
+
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 180px;
+      align-items: center;
+      gap: 48px;
+      padding-bottom: 48px;
+    }
+
+    .hero-mark {
+      width: 180px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 32px;
+      background: var(--brand);
+      color: #ffffff;
+      font-size: 58px;
+      font-weight: 800;
+      box-shadow: var(--shadow);
+    }
+
+    h1, h2 { line-height: 1.15; letter-spacing: 0; }
+    h1 { margin: 0 0 18px; font-size: clamp(34px, 6vw, 54px); }
+    h2 { margin: 0 0 16px; font-size: 27px; }
+    p { margin: 0 0 18px; }
+    .lede { color: var(--muted); font-size: 20px; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+
+    .button {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border: 1px solid var(--brand);
+      border-radius: 6px;
+      background: var(--brand);
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover { background: var(--brand-strong); color: #ffffff; }
+    .button.secondary { background: transparent; color: var(--brand-strong); }
+    .button.secondary:hover { background: #e7f1ec; }
+
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 12px 0 40px;
+    }
+
+    .support-item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      padding: 24px;
+    }
+
+    .support-item h2 { font-size: 21px; }
+    .support-item p:last-child { margin-bottom: 0; }
+
+    .notice {
+      border-left: 4px solid var(--notice-line);
+      background: var(--notice);
+      color: #452d1f;
+      padding: 18px 20px;
+      margin: 0 0 40px;
+    }
+
+    .ynab-note {
+      border-top: 1px solid var(--line);
+      padding-top: 32px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .header-inner { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      .intro { grid-template-columns: 1fr; gap: 28px; padding-bottom: 38px; }
+      .hero-mark { order: -1; width: 120px; height: 120px; border-radius: 24px; font-size: 40px; }
+      .support-grid { grid-template-columns: 1fr; }
+      main { padding-top: 40px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; padding: 22px 0; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #111714;
+        --surface: #18211d;
+        --text: #eef5f1;
+        --muted: #b4c3bc;
+        --line: #35443d;
+        --brand: #4fb98d;
+        --brand-strong: #82d4b0;
+        --accent: #f19a74;
+        --notice: #392a1d;
+        --notice-line: #c7894f;
+        --shadow: 0 12px 36px rgba(0, 0, 0, 0.32);
+      }
+
+      .button { color: #0d1b15; }
+      .button:hover { color: #0d1b15; }
+      .brand-mark, .hero-mark { color: #0d1b15; }
+      .button.secondary:hover { background: #23382f; }
+      .notice { color: #f6dfc9; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true">MH</span>
+        <span>MoneyHoney for YNAB</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#support">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">Money clarity, without moving your money.</h1>
+        <p class="lede">MoneyHoney is a read-only companion for YNAB that turns your plan into clear daily, weekly, and monthly decisions.</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/bensl84/moneyhoney-support/issues/new">Open a support request</a>
+          <a class="button secondary" href="privacy.html">Read the privacy policy</a>
+        </div>
+      </div>
+      <div class="hero-mark" aria-hidden="true">MH</div>
+    </section>
+
+    <section id="support" aria-labelledby="support-title">
+      <h2 id="support-title">Support</h2>
+      <div class="support-grid">
+        <article class="support-item">
+          <h2>YNAB connection</h2>
+          <p>Open MoneyHoney Settings to connect, reconnect, or disconnect YNAB. Access is read-only, and MoneyHoney cannot change your YNAB plan.</p>
+        </article>
+        <article class="support-item">
+          <h2>App access</h2>
+          <p>If Face ID or device authentication does not complete, verify MoneyHoney has permission in iOS Settings and that your device passcode is enabled.</p>
+        </article>
+        <article class="support-item">
+          <h2>Notifications</h2>
+          <p>Notification preferences are available in MoneyHoney Settings and iOS Settings. Lock-screen notification text is intentionally generic.</p>
+        </article>
+        <article class="support-item">
+          <h2>Delete local data</h2>
+          <p>Disconnect YNAB to remove the access token. Deleting the app removes local app data; private iCloud data is managed through your Apple account settings.</p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="notice">
+      <strong>Protect your financial information.</strong> Never include account balances, transaction details, passwords, or access tokens in a support request.
+    </aside>
+
+    <p>For help that is not covered above, <a href="https://github.com/bensl84/moneyhoney-support/issues/new">open a support request</a>. You can also review existing requests in the <a href="https://github.com/bensl84/moneyhoney-support/issues">public support tracker</a>.</p>
+
+    <section class="ynab-note" aria-labelledby="ynab-title">
+      <h2 id="ynab-title">YNAB attribution</h2>
+      <p>MoneyHoney is not affiliated, associated, or in any way officially connected with YNAB or any of its subsidiaries or affiliates. The official YNAB website is <a href="https://www.ynab.com">ynab.com</a>.</p>
+      <p>The names YNAB and You Need A Budget, as well as related names, tradenames, marks, trademarks, emblems, and images are registered trademarks of YNAB.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>&copy; 2026 Ben Leonard</span>
+      <span><a href="privacy.html">Privacy Policy</a></span>
+    </div>
+  </footer>
+</body>
+</html>
