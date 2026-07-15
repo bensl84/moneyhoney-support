@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for MoneyHoney for YNAB.">
+  <title>MoneyHoney for YNAB - Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f5f7f6;
+      --surface: #ffffff;
+      --text: #17211d;
+      --muted: #52615a;
+      --line: #d8e0dc;
+      --brand: #0f5039;
+      --accent: #bf5b34;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--brand); }
+    a:hover { color: var(--accent); }
+
+    header, footer { background: var(--surface); }
+    header { border-bottom: 1px solid var(--line); }
+    footer { border-top: 1px solid var(--line); }
+
+    .bar,
+    article,
+    .footer-inner {
+      width: min(820px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .bar {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: var(--brand);
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    article { padding: 56px 0 72px; }
+    h1, h2 { line-height: 1.2; letter-spacing: 0; }
+    h1 { margin: 0 0 8px; font-size: clamp(34px, 6vw, 48px); }
+    h2 { margin: 40px 0 12px; font-size: 24px; }
+    p, ul { margin: 0 0 18px; }
+    .updated { color: var(--muted); margin-bottom: 34px; }
+    .summary { font-size: 20px; color: var(--muted); }
+
+    .footer-inner {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 620px) {
+      .bar, .footer-inner { align-items: flex-start; flex-direction: column; padding: 16px 0; }
+      article { padding-top: 40px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #111714;
+        --surface: #18211d;
+        --text: #eef5f1;
+        --muted: #b4c3bc;
+        --line: #35443d;
+        --brand: #82d4b0;
+        --accent: #f19a74;
+      }
+
+      .brand-mark { color: #0d1b15; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true">MH</span>
+        <span>MoneyHoney for YNAB</span>
+      </a>
+      <a href="./">Support</a>
+    </div>
+  </header>
+
+  <article>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: July 14, 2026</p>
+    <p class="summary">MoneyHoney does not sell personal data, show advertising, track people across apps or websites, or operate an account-based MoneyHoney server. It is not directed to children under 13.</p>
+
+    <h2>Data MoneyHoney Uses</h2>
+    <p>With your authorization, MoneyHoney requests read-only access to YNAB plan, account, balance, transaction, payee, category, and scheduled-transaction data. MoneyHoney uses that data to calculate spending, cash-flow, payday, bill, debt, goal, and household summaries on your device. MoneyHoney cannot change data in YNAB.</p>
+    <p>MoneyHoney also uses household names, bills, goals, thresholds, and other planning information that you enter in the app. These calculations remain on your device.</p>
+
+    <h2>Where Data Goes</h2>
+    <ul>
+      <li><strong>YNAB:</strong> MoneyHoney uses YNAB's OAuth service to obtain a short-lived, read-only access token. It sends that token only to YNAB's API to retrieve the YNAB data described above. MoneyHoney never asks for or stores your YNAB password or financial-account credentials.</li>
+      <li><strong>iCloud:</strong> Non-secret app settings and household planning data may sync through your private iCloud key-value store so they are available on your devices.</li>
+      <li><strong>Apple services:</strong> Apple may provide on-device notifications and MetricKit crash or hang diagnostics under Apple's platform terms.</li>
+    </ul>
+    <p>The App Store build does not send financial or planning data to Anthropic or any other AI service. MoneyHoney has no app-owned analytics, advertising, or financial-data server. Data used for calculations stays on your device and is not available to the developer.</p>
+
+    <h2>Storage and Retention</h2>
+    <p>The YNAB OAuth access token is stored in the iOS Keychain and expires after approximately two hours. App settings, cached summaries, planning data, and locally protected diagnostics remain on your device until removed through the app, by deleting the app's local data, or by iOS. Non-secret planning data stored in your private iCloud key-value store remains subject to your iCloud settings and Apple's retention behavior.</p>
+    <p>MoneyHoney does not have access to your device or private iCloud store and cannot retrieve this data remotely.</p>
+
+    <h2>Your Choices</h2>
+    <p>You can disconnect YNAB in Settings to delete MoneyHoney's YNAB access token from the device. You can disable notifications in MoneyHoney or iOS Settings. You can remove local app data by deleting the app and manage synced app data through your iCloud settings. You can also revoke MoneyHoney's authorization through YNAB.</p>
+    <p>Disconnecting YNAB stops future YNAB requests but does not control information already processed under YNAB's or Apple's policies. To request deletion of any data you believe was received by the developer, use the contact method below. Do not include financial details, credentials, or access tokens in a support request.</p>
+
+    <h2>Security</h2>
+    <p>MoneyHoney uses HTTPS for YNAB connections, read-only YNAB authorization, a unique security state for every sign-in, Keychain storage for the access token, iOS data protection for local snapshots and diagnostics, and Face ID or device authentication to protect app access. Notification text is generic and does not include financial details.</p>
+
+    <h2>Contact</h2>
+    <p>Privacy questions and deletion requests can be submitted through the <a href="https://github.com/bensl84/moneyhoney-support/issues/new">MoneyHoney support tracker</a>. Do not include financial details, credentials, or access tokens.</p>
+    <p>This policy may be updated when MoneyHoney's data practices change. The Last Updated date above identifies the current version. If an update changes how YNAB data is used or shared, MoneyHoney will request consent before applying that new use.</p>
+
+    <h2>YNAB Attribution</h2>
+    <p>MoneyHoney is not affiliated, associated, or in any way officially connected with YNAB or any of its subsidiaries or affiliates. The official YNAB website is <a href="https://www.ynab.com">ynab.com</a>.</p>
+    <p>The names YNAB and You Need A Budget, as well as related names, tradenames, marks, trademarks, emblems, and images are registered trademarks of YNAB.</p>
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <span>&copy; 2026 Ben Leonard</span>
+      <span><a href="./">MoneyHoney Support</a></span>
+    </div>
+  </footer>
+</body>
+</html>
